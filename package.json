@@ -7,6 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/iortiz12/bootstrap-4#readme"
+  "homepage": "https://bitbucket.org/iortiz12/bootstrap-4#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
