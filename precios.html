@@ -115,18 +115,87 @@
             </div>
 
             <div class="tab-pane fade show" id="tarjetas" tole="tabpanel" aaria-labelledby="tarjetas-tab">
-                <div class="d-flex justify-content-center">
+                <div class="accordion" id="accordionTarjetas">
                     <div class="card">
-                        <div class="card-header" style="background-color: blue; color: white;;">
-                            Tarjetas Aceptadas
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button 
+                                    class="btn btn-link" 
+                                    type="button" 
+                                    data-toggle="collapse" 
+                                    data-target="#collapseBasica"
+                                    aria-expanded="true"
+                                    aria-controls="blabla">
+                                    Tarjeta Básica
+                                </button>
+                            </h5>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Tarjeta Basica</li>
-                            <li class="list-group-item">Tarjeta VIP</li>
-                            <li class="list-group-item">Tarjeta Black</li>
-                        </ul>
+
+                        <div
+                            id="collapseBasica"
+                            class="collapse"
+                            aria-labelledby="headingOne"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 3 cuotas sin interes.
+                            </div>
+                        </div>
+                    </div>               
+                
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button 
+                                    class="btn btn-link" 
+                                    type="button" 
+                                    data-toggle="collapse" 
+                                    data-target="#collapseVip"
+                                    aria-expanded="true"
+                                    aria-controls="blabla">
+                                    Tarjeta VIP
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div
+                            id="collapseVip"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 6 cuotas sin interes. <br />
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, soluta saepe. Illum velit mollitia ratione, architecto.
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button 
+                                    class="btn btn-link" 
+                                    type="button" 
+                                    data-toggle="collapse" 
+                                    data-target="#collapseBlack"
+                                    aria-expanded="true"
+                                    aria-controls="blabla">
+                                    Tarjeta Black
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div
+                            id="collapseBlack"
+                            class="collapse"
+                            aria-labelledby="headingThree"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 12 cuotas sin interes. <br />
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, soluta saepe. Illum velit mollitia ratione, architecto.
+                            </div>
+                        </div>
+                    </div>
+                </div>               
             </div>
 
             <div class="tab-pane fade show" id="comentarios" tole="tabpanel" aaria-labelledby="comentarios-tab">
