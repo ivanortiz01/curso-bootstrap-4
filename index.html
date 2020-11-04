@@ -9,17 +9,41 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
     <link rel="stylesheet" href="css/main.css">
 
     <title>Hoteles</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand"href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedCollapse" aria-controls="navbarNavDropdown" aria-expanded="false" aroa-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedCollapse">
+            <ul clasS="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+                <li class="nav-item "><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="jumbotron">
         <h1>Hoteles Flex</h1>
     </div>
 
     <div class="container">
+        <nav aria-label=breadcrumb>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
         <div class="d-flex">
             <div class="col-sm-4">
                 <h3>¿Cómo funciona?</h3>
@@ -40,76 +64,118 @@
     <hr />
 
     <div class="container">
+        <img src="images/playa.jpg" class="img-fluid" alt="Responsive image" />
         <div class="d-flex flex-wrap flex-row-reverse">
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h2>Holte Rio de Janeiro</h2>
-                    <p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <h5 class="card-title">Holte Rio de Janeiro</h5>
+                    <h6 class="card-subtitle text-muted">Brasil</h6>
+                    <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
             </div>
 
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h2>Hotel Lima</h2>
-                    <p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Lima</h5>
+                    <h6 class="card-subtitle text-muted">Perú</h6>
+                    <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
             </div>
 
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h2>Hotel Buenos Aires</h2>
-                    <p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <!-- <img class="card-img-top" src="images/hotel.png" /> -->
+                    <h5 class="card-title">Hotel Buenos Aires</h5>                    
+                    <h6 class="card-subtitle text-muted">Argentina</h6>
+                    <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
             </div>
 
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h2>Hotel Sao Pablo</h2>
-                    <p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Sao Pablo</h5>
+                    <h6 class="card-subtitle text-muted">Brasil</h6>
+                    <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
             </div>
 
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h2>Hotel Madrid</h2>
-                    <p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Madrid</h5>
+                    <h6 class="card-subtitle text-muted">España</h6>
+                    <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
             </div>
 
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h2>Hotel La Paz</h2>
-                    <p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <h5 class="card-title">Hotel La Paz</h5>
+                    <h6 class="card-subtitle text-muted">Bolivia</h6>
+                    <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
+                </div>
+            </div>
+
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Bogota</h5>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
+                </div>
+            </div>
+
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Cartagena</h5>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
             </div>
         </div>
@@ -147,7 +213,7 @@
                     <p>
                         Desayuno incluido, media pensión.
                     </p>
-                    <button class="btn btn-primary">Reservar</button>
+                    <button class="btn btn-primary"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
 
                 <div class="col-sm-4">
@@ -155,7 +221,7 @@
                     <p>
                         Traslados hotel aeropuerto, aeropuerto hotel.
                     </p>
-                    <button class="btn btn-primary">Reservar</button>
+                    <button class="btn btn-primary"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
 
                 <div class="col-sm-4">
@@ -163,7 +229,7 @@
                     <p>
                         Servicios de tours en destino.
                     </p>
-                    <button class="btn btn-primary">Reservar</button>
+                    <button class="btn btn-primary"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
 
                 <div class="col-sm-4">
@@ -171,7 +237,7 @@
                     <p>
                         Vuelos de aqui para alla.
                     </p>
-                    <button class="btn btn-primary">Reservar</button>
+                    <button class="btn btn-primary"><span class="oi oi-plus" title="plus" aria-hidden="true"></span> Reservar</button>
                 </div>
             </div>
         </div>
@@ -188,9 +254,9 @@
             <div class="col-sm-4">
                 <address>
                     <h3>Oficina Central</h3>
-                    <p>Cra 1 Cll 1, Lorem</p>
-                    <p>+1234564</p>
-                    <p>correo@dominio.com</p>
+                    <p><span class="oi oi-home foooter-address-icon" title="home" aria-hidden="true"></span>Cra 1 Cll 1, Lorem</p>
+                    <p><span class="oi oi-phone foooter-address-icon" title="iphone" aria-hidden="true"></span> +1234564</p>
+                    <p><span class="oi oi-inbox foooter-address-icon" title="inbox" aria-hidden="true"></span>correo@dominio.com</p>
                 </address>
             </div>
             <div class="col-sm-4  d-flex flex-column align-items-end">
