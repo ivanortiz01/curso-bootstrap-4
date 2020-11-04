@@ -1,10 +1,5 @@
 # Cursos Bootstrap 4
 
-## Semana 1
+## Semana 3
 
-Creación de proyecto (npm init).
-
-Configurar lite server (npm i --save-dev lite-server).
-
-
-Documentación evidencias, [aquí](./docs/semana_1.docx)
+Documentación evidencias, [aquí](./docs/semana_3.docx)
