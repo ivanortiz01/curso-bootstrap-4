@@ -91,7 +91,8 @@
                     <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
-                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus"
@@ -118,7 +119,8 @@
                 <img src="images/playa.jpg" class="card-img-top" alt="Responsive image" />
                 <div class="card-body">
                     <!-- <img class="card-img-top" src="images/hotel.png" /> -->
-                    <h5 class="card-title">Hotel Buenos Aires</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Las primeras reservas cuentan con clases de tango gratis!">Hotel Buenos Aires</h5>
                     <h6 class="card-subtitle text-muted">Argentina</h6>
                     <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -140,8 +142,10 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus" title="plus"
-                            aria-hidden="true"></span> Reservar</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">
+                        <span class="oi oi-plus" title="plus" aria-hidden="true"></span>
+                        Reservar
+                    </button>
                 </div>
             </div>
 
@@ -301,7 +305,8 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -333,7 +338,7 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
@@ -341,6 +346,13 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
+
+    <script>
+        $(function () {
+            $("[data-toggle=tooltip]").tooltip();
+            $("[data-toggle=popover]").popover();
+        });
+    </script>
 </body>
 
 </html>
