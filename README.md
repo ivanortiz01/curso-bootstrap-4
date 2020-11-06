@@ -20,6 +20,8 @@ npm i node-sass --save-dev
 
 npm i --save-dev usemin-cli cssmin uglifyjs htmlmin
 
+grunt:
+
 npm i --save-dev -g grunt
 
 npm i grunt-contrib-sass --save-dev
@@ -43,3 +45,17 @@ npm install --save-dev grunt-contrib-uglify
 npm install --save-dev grunt-filerev
 
 npm install --save-dev grunt-usemin
+
+Gulp:
+
+npm i --save-dev -g gulp-cli
+
+npm i --save-dev gulp
+
+npm i --save-dev gulp-sass
+
+npm i --save-dev browser-sync
+
+npm i --save-dev del gulp-imagemin
+
+npm i --save-dev gulp-uglify gulp-usemin gulp-rev gulp-clean-css gulp-flatmap gulp-htmlmin
