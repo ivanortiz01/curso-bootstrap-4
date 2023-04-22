@@ -33,7 +33,7 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.29.1",
     "copyfiles": "^2.4.0",
     "cssmin": "^0.4.3",
     "del": "^6.0.0",
